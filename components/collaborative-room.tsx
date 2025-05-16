@@ -14,7 +14,7 @@ import { Editor } from "./editor/Editor";
 import ActiveCollaborators from "./active-collaborators";
 import { Input } from "./ui/input";
 import Image from "next/image";
-import { updateDocument } from "@/lib/actions/user.actions";
+import { updateDocument } from "@/lib/actions/room.actions";
 
 const CollaborativeRoom = ({
   roomId,
