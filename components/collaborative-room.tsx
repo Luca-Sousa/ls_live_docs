@@ -15,6 +15,7 @@ import ActiveCollaborators from "./active-collaborators";
 import { Input } from "./ui/input";
 import Image from "next/image";
 import { updateDocument } from "@/lib/actions/room.actions";
+import Loader from "./loader";
 
 const CollaborativeRoom = ({
   roomId,
@@ -78,7 +79,7 @@ const CollaborativeRoom = ({
 
   return (
     <RoomProvider id={roomId} initialPresence={roomId}>
-      <ClientSideSuspense fallback={<div>Loading…</div>}>
+      <ClientSideSuspense fallback={<Loader />}>
         <div className="flex size-full max-h-screen flex-1 flex-col items-center overflow-hidden">
           <Header>
             <div
