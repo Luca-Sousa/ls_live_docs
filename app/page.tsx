@@ -1,6 +1,7 @@
 import AddDocumentBtn from "@/components/add-document-btn";
 import DeleteModal from "@/components/delete-modal";
 import Header from "@/components/header";
+import Notifications from "@/components/notifications";
 import { getDocuments } from "@/lib/actions/room.actions";
 import { dateConverter } from "@/lib/utils";
 import { SignedIn, UserButton } from "@clerk/nextjs";
@@ -22,7 +23,7 @@ const Home = async () => {
     <main className="relative flex min-h-screen w-full flex-col items-center gap-5 sm:gap-10">
       <Header className="sticky left-0 top-0">
         <div className="flex items-center gap-2 lg:gap-4">
-          Notificações
+          <Notifications />
           <SignedIn>
             <UserButton />
           </SignedIn>
