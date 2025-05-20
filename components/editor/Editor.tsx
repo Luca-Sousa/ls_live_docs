@@ -22,10 +22,7 @@ import { useThreads } from "@liveblocks/react/suspense";
 import Loader from "../loader";
 import FloatingToolbarPlugin from "./plugins/floating-toolbar-plugin";
 import Comments from "../ui/comments";
-
-// Catch any errors that occur during Lexical updates and log them
-// or throw them as needed. If you don't throw them, Lexical will
-// try to recover gracefully without losing user data.
+import DeleteModal from "../delete-modal";
 
 function Placeholder() {
   return <div className="editor-placeholder">Insira algum texto...</div>;
@@ -57,7 +54,7 @@ export function Editor({
       <div className="editor-container size-full">
         <div className="toolbar-wrapper flex min-w-full justify-between">
           <ToolbarPlugin />
-          {/* {currentUserType === "editor" && <DeleteModal roomId={roomId} />} */}
+          {currentUserType === "editor" && <DeleteModal roomId={roomId} />}
         </div>
 
         <div className="editor-wrapper flex flex-col items-center justify-start">
