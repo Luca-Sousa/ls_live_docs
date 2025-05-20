@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import { ClerkProvider } from "@clerk/nextjs";
 import { dark } from "@clerk/themes";
 import Provider from "./provider";
+import { ptBR } from "@clerk/localizations";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -29,7 +30,11 @@ export default function RootLayout({
           colorPrimary: "#3371FF",
           fontSize: "16px",
         },
+        layout: {
+          unsafe_disableDevelopmentModeWarnings: true,
+        },
       }}
+      localization={ptBR}
     >
       <html lang="en" suppressHydrationWarning>
         <body
