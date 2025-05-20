@@ -2,9 +2,7 @@ import React from "react";
 import {
   Select,
   SelectContent,
-  SelectGroup,
   SelectItem,
-  SelectLabel,
   SelectTrigger,
   SelectValue,
 } from "./ui/select";
@@ -32,13 +30,13 @@ const UserTypeSelector = ({
         <SelectItem value="view" className="shad-select-item">
           <span className="flex items-center gap-1">
             <ViewIcon size={20} />
-            Exibir
+            Leitor
           </span>
         </SelectItem>
         <SelectItem value="editor" className="shad-select-item">
           <span className="flex items-center gap-1">
             <PencilLineIcon size={20} />
-            Editar
+            Editor
           </span>
         </SelectItem>
       </SelectContent>
