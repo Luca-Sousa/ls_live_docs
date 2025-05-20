@@ -13,7 +13,7 @@ import {
 } from "./ui/dialog";
 import { Button } from "./ui/button";
 import Image from "next/image";
-import { deleteDocument } from "@/lib/actions/room.actions";
+import { deleteDocument } from "@/app/lib/actions/room.actions";
 
 const DeleteModal = ({ roomId }: DeleteModalProps) => {
   const [open, setOpen] = useState(false);

@@ -14,7 +14,7 @@ import { Editor } from "./editor/Editor";
 import ActiveCollaborators from "./active-collaborators";
 import { Input } from "./ui/input";
 import Image from "next/image";
-import { updateDocument } from "@/lib/actions/room.actions";
+import { updateDocument } from "@/app/lib/actions/room.actions";
 import Loader from "./loader";
 import ShareModal from "./share-modal";
 

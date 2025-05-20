@@ -16,7 +16,7 @@ import Image from "next/image";
 import { Input } from "./ui/input";
 import UserTypeSelector from "./user-type-select";
 import Collaborator from "./collaborator";
-import { updateDocumentAccess } from "@/lib/actions/room.actions";
+import { updateDocumentAccess } from "@/app/lib/actions/room.actions";
 
 const ShareModal = ({
   roomId,

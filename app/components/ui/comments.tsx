@@ -1,4 +1,4 @@
-import { cn } from "@/lib/utils";
+import { cn } from "@/app/lib/utils";
 import { useThreads } from "@liveblocks/react";
 import { useIsThreadActive } from "@liveblocks/react-lexical";
 import { Composer, Thread } from "@liveblocks/react-ui";

@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 import {
   removeCollaborator,
   updateDocumentAccess,
-} from "@/lib/actions/room.actions";
+} from "@/app/lib/actions/room.actions";
 
 const Collaborator = ({
   roomId,

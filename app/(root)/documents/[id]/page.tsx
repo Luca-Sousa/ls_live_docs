@@ -1,6 +1,7 @@
-import CollaborativeRoom from "@/components/collaborative-room";
-import { getDocument } from "@/lib/actions/room.actions";
-import { getClerkUsers } from "@/lib/actions/user.actions";
+
+import CollaborativeRoom from "@/app/components/collaborative-room";
+import { getDocument } from "@/app/lib/actions/room.actions";
+import { getClerkUsers } from "@/app/lib/actions/user.actions";
 import { currentUser } from "@clerk/nextjs/server";
 import { redirect } from "next/navigation";
 import React from "react";

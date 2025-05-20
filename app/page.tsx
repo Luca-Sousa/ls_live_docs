@@ -1,9 +1,9 @@
-import AddDocumentBtn from "@/components/add-document-btn";
-import DeleteModal from "@/components/delete-modal";
-import Header from "@/components/header";
-import Notifications from "@/components/notifications";
-import { getDocuments } from "@/lib/actions/room.actions";
-import { dateConverter } from "@/lib/utils";
+import AddDocumentBtn from "@/app/components/add-document-btn";
+import DeleteModal from "@/app/components/delete-modal";
+import Header from "@/app/components/header";
+import Notifications from "@/app/components/notifications";
+import { getDocuments } from "@/app/lib/actions/room.actions";
+import { dateConverter } from "@/app/lib/utils";
 import { SignedIn, UserButton } from "@clerk/nextjs";
 import { currentUser } from "@clerk/nextjs/server";
 import Image from "next/image";
